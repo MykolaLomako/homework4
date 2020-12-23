@@ -378,6 +378,8 @@ h1 {
   margin-left: 30px;
   background-color: var(--colwhite);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .employees-item-text-container {
   padding: 30px 50px 16px 50px;
@@ -422,6 +424,59 @@ h1 {
   background-color: var(--colmain);
 }
 
+/*Constant clients section*/
+
+.section-header-constant-clients {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--colsec);
+}
+
+.constant-clients-icons-list {
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.constant-clients-item {
+  margin-right: 30px;
+}
+.constant-clients-item:last-child {
+  margin-right: 0px;
+}
+.constant-clients-item a {
+  display: block;
+  width: 170px;
+  height: 90px;
+}
+.constant-clients-icon {
+  width: 170px;
+  height: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid var(--colsocialdef);
+  border-radius: 4px;
+  fill: var(--colsocialdef);
+}
+
+.constant-clients {
+  padding: 94px 0px;
+}
+
+.constant-clients-icon:hover {
+  border: 1px solid var(--colmain);
+  fill: var(--colmain);
+}
+
+/* footer css */
+
 footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -429,8 +484,6 @@ footer {
 }
 .footer-container-item {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   width: 1200px;
   margin: 0px auto;
   padding-left: 15px;
@@ -474,6 +527,51 @@ address a {
   font-style: normal;
 
   color: rgba(255, 255, 255, 0.6);
+}
+
+.socials-header-footer {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--colwhite);
+}
+.socials-footer-list {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.footer-socials-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+.footer-social-icons {
+  width: 44px;
+  height: 44px;
+  padding: 12px 0px;
+  fill: var(--colwhite);
+  background-color: var(--colgrey);
+  border-radius: 50%;
+}
+.footer-social-icons:hover {
+  background-color: var(--colmain);
+}
+.socials-footer-item {
+  margin-right: 10px;
+}
+.socials-footer-item:last-child {
+  margin-right: 0px;
+}
+.socials-footer-item a {
+  display: block;
+  width: 44px;
+  height: 44px;
 }
 
 /*styles for main section portfolio webpage*/
@@ -543,6 +641,10 @@ header {
 .images-projects-item {
   margin-left: 30px;
   margin-top: 30px;
+}
+.images-projects-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .images-projects-item h3 {
