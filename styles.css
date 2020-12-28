@@ -38,13 +38,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* header positioning */
-/* .logo-container {
-  display: flex;
-  align-items: center;
-  margin-top: 24px;
-  margin-bottom: 25px;
-} */
+
 .nav-container-header {
   display: flex;
   align-items: center;
@@ -155,14 +149,6 @@ header contacts */
   border: 0px;
   margin: auto 10px auto 0px;
 }
-/* .icon_mobile_header:hover {
-  fill: var(--colmain);
-}
-.icon_envelope_header:hover {
-  fill: var(--colmain);
-} */
-
-/* hero container */
 .hero {
   background-color: #2f303a;
   display: block;
@@ -176,6 +162,7 @@ header contacts */
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  max-width: 1600px;
 
   /* outline: 2px solid red; */
 }
@@ -223,18 +210,6 @@ h1 {
   /*  outline: 2px solid red; */
 }
 
-/* .general-description-container {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  width: 1230px;
-  
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 2px solid red;
-} */
 .general-description-list {
   display: flex;
   align-items: center;
@@ -252,14 +227,22 @@ h1 {
 .general-description-item:first-child {
   margin-left: 0px;
 }
-.gen-description-icon {
-  width: 270px;
-  height: 120px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+.gen-description-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   background-color: var(--colsubgrey);
+  width: 270px;
+  height: 120px;
+  margin: 0px;
+  padding: 0px;
 }
+.gen-description-icon {
+  width: 70px;
+  height: 70px;
+}
+
 .general-description-header {
   font-weight: 700;
   font-size: 14px;
@@ -407,20 +390,22 @@ h1 {
   margin-right: 0px;
 }
 .employees-item-icons-item a {
-  display: block;
-  height: 44px;
-}
-.employees-social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  fill: var(--colsocialdef);
-  padding-top: 12px;
-  padding-bottom: 12px;
   border-radius: 50%;
+  color: var(--colsocialdef);
+}
+.employees-social-icons {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
-.employees-social-icons:hover {
-  fill: var(--colwhite);
+.employees-item-icons-item a:hover {
+  color: var(--colwhite);
   background-color: var(--colmain);
 }
 
@@ -452,27 +437,26 @@ h1 {
   margin-right: 0px;
 }
 .constant-clients-item a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 90px;
+  border-radius: 4px;
+  border: 1px solid var(--colsocialdef);
+  color: var(--colsocialdef);
 }
 .constant-clients-icon {
-  width: 170px;
-  height: 90px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border: 1px solid var(--colsocialdef);
-  border-radius: 4px;
-  fill: var(--colsocialdef);
+  fill: currentColor;
+}
+
+.constant-clients-item a:hover {
+  color: var(--colmain);
+  border-color: var(--colmain);
 }
 
 .constant-clients {
   padding: 94px 0px;
-}
-
-.constant-clients-icon:hover {
-  border: 1px solid var(--colmain);
-  fill: var(--colmain);
 }
 
 /* footer css */
@@ -552,15 +536,9 @@ address a {
   margin-left: 70px;
 }
 .footer-social-icons {
-  width: 44px;
-  height: 44px;
-  padding: 12px 0px;
-  fill: var(--colwhite);
-  background-color: var(--colgrey);
-  border-radius: 50%;
-}
-.footer-social-icons:hover {
-  background-color: var(--colmain);
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 .socials-footer-item {
   margin-right: 10px;
@@ -569,11 +547,20 @@ address a {
   margin-right: 0px;
 }
 .socials-footer-item a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
+  color: var(--colwhite);
+  background-color: var(--colgrey);
 }
 
+.socials-footer-item a:hover {
+  background-color: var(--colmain);
+}
+.social
 /*styles for main section portfolio webpage*/
 header {
   border-bottom: 1px solid;
@@ -642,11 +629,17 @@ header {
   margin-left: 30px;
   margin-top: 30px;
 }
-.images-projects-item:hover {
+.images-projects-item a:hover,
+.images-projects-item a:focus {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
+/* .items-links-port:hover {
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
 .images-projects-item h3 {
   margin: 0px;
 
