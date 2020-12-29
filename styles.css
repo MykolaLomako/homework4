@@ -560,7 +560,7 @@ address a {
 .socials-footer-item a:hover {
   background-color: var(--colmain);
 }
-.social
+
 /*styles for main section portfolio webpage*/
 header {
   border-bottom: 1px solid;
@@ -600,10 +600,6 @@ header {
   justify-content: center;
   margin: 0px;
   padding: 0px;
-  /* width: 1200px;
-  margin: 0px auto;
-  padding-left: 15px;
-  padding-right: 15px; */
 }
 .button-link-portfolio-item {
   margin-left: 8px;
@@ -615,14 +611,9 @@ header {
 .images-projects {
   display: flex;
   flex-wrap: wrap;
-  /* width: 1200px; */
+
   margin: 50px 0px 0px 0px;
   padding: 0px;
-  /* margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px; */
-  /*  padding-bottom: 94px; */
 }
 
 .images-projects-item {
@@ -635,11 +626,7 @@ header {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-/* .items-links-port:hover {
-  display: block;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-} */
+
 .images-projects-item h3 {
   margin: 0px;
 
